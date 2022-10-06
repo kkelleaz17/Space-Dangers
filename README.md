@@ -5,7 +5,8 @@ I used:
 4. Position sticky
 5. grid
 6. repeat
-7. background and other simple css commands
+7. transform
+8. background and other simple css commands
 
 Simple overview:
 
