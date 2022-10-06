@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap');
+*{
+    margin: 0px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    mix-blend-mode: normal;  
+}
+
+.PHD{
+    display: grid;
+    width: 80%;
+    height: 80%;
+    grid-template-columns: repeat(3,calc(100% / 3));
+    transform-style:preserve-3d;
+    perspective: 50ppx;
+    grid-template-rows: repeat(3,calc(100% / 3));
+}
+.PHD div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;   
+}
+
+.PHD div h1{
+    background-color: transparent;
+    font-size: 200%;
+    color:red;
+}
+.PHD div img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transform-style:preserve-3d;
+}
+.PHD div:hover{
+    filter: grayscale(0%);
+    transform: rotateX(360deg);
+}
+
+.ASD{
+    filter: blur(5px);
+}
+.ASD:hover{
+    filter: blur(0px);
+}
+.BH{
+    filter: grayscale(90%); 
+}
+.BH:hover{
+    filter: grayscale(0%); 
+}
+
+.GR{
+    filter: opacity(30%);
+    
+}
+.GR:hover{
+    filter: opacity(100%);
+}
+
+
+
+
+
+
+.PH{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.PH video{
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    z-index: -2;
+    object-fit: fill;  
+}
+
+footer{
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+
+
+
+
+
+
+.HAM{
+    display: none;
+    /*BLOCK */
+    margin-inline: 50px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.HAM:hover{
+    background-color: #ffffff30;
+}
+.HAM div{
+  width: 30px;
+  height: 5px;
+  border-radius: 200px;
+  margin-block: 5px;
+  background-color: gray; 
+}
+.NAV1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white solid;
+    font-size: 100%;
+    background-color: black;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.NAV1 h1{
+    margin-left: 50px;
+    position: sticky;
+}
+.NAV1 div a{
+font-size: 25px;
+margin-inline: .4vw;
+text-decoration: none;
+position: sticky;
+}
+
+
+.NAVY a:hover{
+    border-bottom: #ffffff90 solid;
+    color:#ffffff90;
+}
+
+
+
+
+@media only screen and (max-width: 780px) {
+    .HAM{
+        display: block;
+    }
+    .NAVY{
+        display: none;
+    }
+    .PHD div h1{
+        font-size: 100%;
+    }
+}
